@@ -31,22 +31,28 @@
   <div id="loader" class="loader-overlay"><div class="spinner-border text-primary"></div></div>
 
   <div class="app-container">
-    <div class="app-header" id="nav" style="display:none;">
-      <img src="assets/123.jpg" class="brand-logo" alt="HSBS" onerror="this.src='https://via.placeholder.com/120x45?text=HSBS+INTERNET'">
-      <button class="btn btn-sm btn-outline-danger" onclick="App.logout()">Logout</button>
-    </div>
+  <div class="app-header" id="nav" style="display:none;">
+    <img src="assets/123.jpg" 
+         class="brand-logo" 
+         alt="HSBS" 
+         onerror="this.onerror=null; this.src='https://placehold.co/120x45?text=HSBS+INTERNET'">
+    <button class="btn btn-sm btn-outline-danger" onclick="App.logout()">Logout</button>
+  </div>
 
-    <section class="screen active" id="scr0">
-      <div class="d-flex flex-column justify-content-center h-100 px-3 text-center">
-        <img src="assets/123.jpg" style="height:90px; width:auto; margin-bottom:30px; border-radius:8px;" onerror="this.style.display='none'">
-        <h4 class="text-white mb-4">Executive Portal</h4>
-        <div class="card-ui">
-          <input type="text" id="logU" class="form-control mb-2" placeholder="User ID">
-          <input type="password" id="logP" class="form-control mb-3" placeholder="Password">
-          <button onclick="App.login()" class="btn-app btn-next">Login</button>
-        </div>
+  <section class="screen active" id="scr0">
+    <div class="d-flex flex-column justify-content-center h-100 px-3 text-center">
+      <img src="assets/123.jpg" 
+           style="height:90px; width:auto; margin-bottom:30px; border-radius:8px; object-fit:contain;" 
+           onerror="this.onerror=null; this.src='https://placehold.co/120x90?text=HSBS+LEADS'">
+      
+      <h4 class="text-white mb-4">Executive Portal</h4>
+      <div class="card-ui">
+        <input type="text" id="logU" class="form-control mb-2" placeholder="User ID">
+        <input type="password" id="logP" class="form-control mb-3" placeholder="Password">
+        <button onclick="App.login()" class="btn-app btn-next">Login</button>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="screen" id="scr1">
       <div class="card-ui">
